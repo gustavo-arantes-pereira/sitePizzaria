@@ -20,3 +20,5 @@ E claro as principais ferramentas para o funcionamento de um PWA:
 
     - Service Worker que é um script executado em segundo plano pelo navegador, que possibilita recursos independentes de uma página web ou da interação do usuário. Neste caso         proporcionando uma experiência offline.
     - Arquivo manifest sendo um arquivo texto que fornece informações sobre a aplicação, neste caso (nome, abreviatura, informações dos ícones, cor tema, cor de fundo, display e       orientação da tela).
+ 
+O chatbot sendo um algorítmo que representa um robô de conversação, se comporta ainda como uma possibilidade pois ainda não tem interação direta com o site e não é capaz de gerar o pedido no final.
