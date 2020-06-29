@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Pizzaria">
+    <meta name="theme-color" content="#016837">
+	<title>Toscana Pizzaria</title>
+	<link rel="shortcut icon" type="image/x-png" href="img/Icone.png">
+	<link href="css/estilopizzaria.css" rel="stylesheet">
+	<link rel="apple-touch-icon" href="img/icone-home-screen-192.png">
+	<link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+	<section id="mostra-pizza" class="mostra-pizza">
+		<section id="conteudo_mostra_pizza" onclick="">
+			<div id="botao_fechar" onclick="fechar()"><strong>X</strong></div>
+			<div id="foto_pizza">
+				<img id="img_pizza" src="">
+			</div>
+			<div id="descricao_pizza">
+
+			</div>
+			<a id="botao_pedir" href="https://assistant-chat-us-east.watsonplatform.net/web/public/31690434-a910-4c1f-9ba5-95f7a05ad1e8" target="blank"><strong>Pedir</strong></a>
+		</section>
+	</section>
+	<section id="container-hm">
+		<header id="header">
+			<div class="icone_menu">
+				<a><svg width="21.999999999999996" height="21.999999999999996" xmlns="http://www.w3.org/2000/svg">
+					<g>
+						<line stroke="#000" class="firstLine" y2="4.146656" x2="25.477124" y1="4.146656" x1="-1.973854"
+							stroke-width="3.5" />
+						<line stroke="#000" class="secondLine" y2="11.151682" x2="25.607844" y1="11.020963" x1="-2.104574"
+							stroke-width="3.5" />
+						<line stroke="#000" class="thirdLine" y2="17.804165" x2="24.852663" y1="17.673446" x1="-1.683284"
+							stroke-width="3.5" />
+					</g>
+				</svg></a>
+			</div>
+			<div class="logo">
+				<img class="img_logo" src="img/logo.png" alt="logo">
+			</div>
+			<div id="copia-icone-menu"></div>
+		</header>
+
+		<!-- Menu -->
+		<div id="janela_menu" class="janela_menu">
+			<nav>
+				<ul class="menu">
+					<li><a id="menu_cardapio" href="#cardapio">Cardápio</a></li>
+					<li><a id="menu_pedir" href="#bot">Faça seu pedido</a></li>
+					<li><a id="menu_sobre" href="#sobre">Sobre nós</a></li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Conteúdo -->	
+	<main>
+		<!-- SLIDER ---------------------------------------------------------------------------------------------------------- -->
+		<figure id="carousel">	
+			<span class="trs prev"><img src="img/setaE.png" alt="Seta para esquerda"></span>
+	
+			<div id="itens-carousel">
+				<ul>
+					<li>
+						<img class="item-carousel" src="img/slide1.jpg" alt="Pizza no forno a lenha">
+					</li>
+					<li>
+						<img class="item-carousel" src="img/slide2.jpg" alt="Duas pizzas no forno a lenha">
+					</li>
+					<li>
+						<img class="item-carousel" src="img/slide3.jpg" alt="Forno a lenha">
+					</li>
+				</ul>
+			</div>
+	
+			<span class="trs next"><img src="img/setaD.png" alt="Seta para direita"></span>
+		</figure>
+
+		<div id="cardapio" class="anime-esq">CARDÁPIO</div>
+
+		<!-- Box das pizzas --------------------------------------------------------------------------------------------------------------- -->
+
+		<div class="titulo pizza anime-esq">PIZZAS</div>
+		<div id="box-pizzas" class="box anime-esq">
+			<ul id="pizza_esquerda" class="produtos">
+				<li class="first_line">SALGADAS</li>			
+				<li class="linha_produtos_pizzas">
+					<section class="section_produto esquerda" onclick="mostrar('portuguesa')">
+						<div class="padding_left min_height">
+							<strong>PORTUGUESA</strong><br>
+							Molho, mussarela, presunto, cebola, ovos, azeitona e orégano<br>
+						</div>
+						<strong><div class="preco">R$35,00</div></strong>
+					</section>
+				</li>
+				<li class="linha_produtos_pizzas">
+					<section class="section_produto" onclick="mostrar('francesa')">
+						<div class="padding_left min_height">
+							<strong>FRANCESA</strong><br>
+							Molho, mussarela, cebola, tomate, palmito, bacon, azeitona e uma camada extra de mussarela<br>
+						</div>
+						<strong><div class="preco">R$37,00</div></strong>
+					</section>
+				</li>
+				<li class="linha_produtos_pizzas">
+					<section class="section_produto" onclick="mostrar('calabresa')">
+						<div class="padding_left min_height">
+							<strong>CALABRESA</strong><br>
+							Molho, mussarela, calabresa e orégano<br>
+						</div>
+						<strong><div class="preco">R$28,00</div></strong>
+					</section>
+				</li>
+				<li class="linha_produtos_pizzas">
+					<section class="section_produto" onclick="mostrar('escarola')">
+						<div class="padding_left min_height">
+							<strong>ESCAROLA</strong><br>
+							Molho, mussarela, escarola, alho, bacon e orégano<br>
+						</div>
+						<strong><div class="preco">R$32,00</div></strong>
+					</section>
+				</li>
+			</ul>
+			<ul id="pizza_direita" class="produtos">
+				<li class="first_line">DOCES</li>
+				<li class="linha_produtos_pizzas">
+					<section class="section_produto" onclick="mostrar('chocolate')">
+						<div class="padding_left min_height">
+							<strong>CHOCOLATE</strong><br>
+							Leite condensado, mussarela e chocolate ao leite<br>
+						</div>
+						<strong><div class="preco">R$25,00</div></strong>
+					</section>
+				</li>
+				<li class="linha_produtos_pizzas">
+					<section class="section_produto" onclick="mostrar('beijinho')">
+						<div class="padding_left min_height">
+							<strong>BEIJINHO</strong><br>
+							Leite condensado, mussarela, chocolate branco e côco<br>
+						</div>
+						<strong><div class="preco">R$26,00</div></strong>
+					</section>
+				</li>
+				<li class="linha_produtos_pizzas">
+					<section class="section_produto" onclick="mostrar('cocada')">
+						<div class="padding_left min_height">
+							<strong>COCADA</strong><br>
+							Leite condensado, mussarela e cocada cremosa<br>
+						</div>
+						<strong><div class="preco">R$24,00</div></strong>
+					</section>
+				</li>
+				<li class="linha_produtos_pizzas">
+					<section class="section_produto" onclick="mostrar('sensacao')">
+						<div class="padding_left min_height">
+							<strong>SENSAÇÃO</strong><br>
+							Leite condensado, mussarela, morango e chocolate<br>
+						</div>
+						<strong><div class="preco">R$28,00</div></strong>
+					</section>
+				</li>
+			</ul>
+		</div>
+	
+		<!-- Box dos sabores da borda recheada -------------------------------------------------------------------------------------------- -->
+		<div id="borda" class="box">
+			<ul class="borda_recheada anime-esq">
+				<li class="first_line">BORDA</li>
+				<li class="linha_produtos_bordas">
+					<section class="padding_top">
+						<strong class="nome_produto">CATUPIRY</strong><br>
+						<strong><div class="preco">R$3,00</div></strong>
+					</section>				
+				</li>
+				<li class="linha_produtos_bordas">
+					<section class="padding_top">
+						<strong class="nome_produto">CHEDDAR</strong><br>
+						<strong><div class="preco">R$3,00</div></strong>
+					</section>				
+				</li>
+				<li class="linha_produtos_bordas">
+					<section class="padding_top">
+						<strong class="nome_produto">CHOCOLATE</strong><br>
+						<strong><div class="preco">R$3,00</div></strong>
+					</section>				
+				</li>
+			</ul>
+		</div>
+	
+		<!-- Box das bebidas -->
+		<div class="titulo bebidas anime-esq">BEBIDAS</div>
+		<div id="bebida" class="box anime-esq">
+			<ul id="bebidas_esquerda" class="refri">
+				<li class="first_line">REFRIGERANTES</li>
+				<li class="linha_produtos_refri" >
+					<section class="padding_top">
+						<div class="min_height_bebidas">
+							<strong class="nome_produto">COCA-COLA (600ml)</strong><br>
+						</div>
+						<strong><div class="preco">R$5,00</div></strong>
+					</section>				
+				</li>
+				<li class="linha_produtos_refri">
+					<section class="padding_top">
+						<div class="min_height_bebidas">
+							<strong class="nome_produto min_height_bebidas">GUARANÁ (600ml)</strong><br>
+						</div>	
+						<strong><div class="preco">R$5,00</div></strong>
+					</section>				
+				</li>
+			</ul>
+			<ul id="bebidas_direita" class="bebida">
+				<li class="first_line">SUCOS</li>
+				<li class="linha_produtos_bebida">
+					<section class="padding_top">
+						<div class="padding_left min_height_bebidas">
+							<strong>SUCO DE LARANJA</strong><br>
+							Naturacitrus (450ml)<br>
+						</div>
+						<strong><div class="preco">R$4,00</div></strong>
+					</section>
+				</li>
+				<li class="linha_produtos_bebida">
+					<section class="padding_top">
+						<div class="padding_left min_height_bebidas">
+							<strong>SUCO DE UVA</strong><br>
+							Naturacitrus (450ml)<br>
+						</div>
+						<strong><div class="preco">R$4,00</div></strong>
+					</section>
+				</li>
+			</ul>
+		</div>
+		<div id="outros" class="box">	
+			<ul id="outras" class="outros anime-esq">
+				<li class="first_line">OUTROS</li>
+				<li id="linha_produtos_outros">
+					<section class="padding_top">
+						<strong class="nome_produto">Água (500ml)</strong><br>
+						<strong><div class="preco">R$3,00</div></strong>
+					</section>				
+				</li>
+			</ul>
+		</div>
+	
+		<!-- Bloco do Chatbot -->
+		<section id="bot" class="box">
+			<div class="outros anime-esq" id="pedido">
+				<div id="div_img_bot"><img id="img_bot" src="img/chef.jpg" alt="Chefe de cozinha"></div>
+				<div id="texto_bot">Olá, faça seu pedido clicando no botão abaixo, você será atendido(a) pelo <strong>Rob</strong> nosso atendente robô !</div>
+				<a id="botao_chamar_bot" href='https://assistant-chat-us-east.watsonplatform.net/web/public/31690434-a910-4c1f-9ba5-95f7a05ad1e8' target="blank">Fazer pedido</a>
+			</div>
+		</section>
+	
+		<!-- Bloco do "Sobre nós" -->
+		<div id="sobre" class="anime-esq">
+			<h1 class="topico">Sobre nós</h1>
+			<div class="texto_sobre">
+				A Toscana Pizzaria é um projeto em desenvolvimento para um Trabalho de Conclusão de Curso.
+				Assim sendo, seu nome e valores em reais (pizzas, bordas e bebidas) são meramente fictícios e ilustrativos, 
+				com foco em mostrar a possibilidade de um vínculo entre um site e um Chatbot e com foco na demonstração de um aplicativo web progressivo (PWA).
+			</div>
+		</div>
+
+	</main>
+
+	<!-- Rodapé -->
+	<footer>
+			<div class="rodape">&copy; Gustavo Arantes Pereira</div>
+	</footer>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script>
+	    if ('serviceWorker' in navigator) {
+			window.addEventListener('load', function() {
+				navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+	            	console.log('Service worker registrado com escopo: ', registration.scope);
+				}, function(err) {
+					console.log('Service worker falhou: ', err);
+				});
+			});	        
+	    }
+	</script>
+</body>
+</html>

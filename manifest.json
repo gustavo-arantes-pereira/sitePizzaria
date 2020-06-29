@@ -1,0 +1,17 @@
+{
+    "name": "Toscana Pizzaria",
+    "short_name": "TP",
+    "icons": [{
+        "src": "img/icone-home-screen-512.png",
+        "sizes": "512x512"
+    },{
+    "src": "img/icone-home-screen-192.png",
+    "sizes": "192x192"
+    }],
+    "theme_color": "#016837",
+    "background_color": "#016837",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+}
